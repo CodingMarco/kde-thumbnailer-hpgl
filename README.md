@@ -1,12 +1,13 @@
-# KDE Thumbnailer APK
+# KDE Thumbnailer HPGL
 
-Based on https://store.kde.org/p/1081013/, updated and working for Qt 5.12.0 & KDE Frameworks 5.54.0.
-
-It is currently only possible to parse APKs using the v1 signing schema (JAR signing). APKs signed with the APK Signature Scheme v2 or later fail because [KZip is unable to handle extra data before the Central Directory block in the file](https://bugs.kde.org/show_bug.cgi?id=415221).
+Based on https://github.com/z3ntu/kde-thumbnailer-apk.
+HPGL thumbnails are created by calling [hp2xx](https://www.gnu.org/software/hp2xx/) which needs to be installed.
+This package will also install a better HPGL file detection based on a few common HPGL commands, because consistent file extensions apparently weren't a thing in the 90s (at least not within the HP test & measurements divisions).
 
 ## Installation
 
-This lines will install it correctly for Arch Linux, be careful with other distros!
+1. Install hp2xx, cmake, qt5
+2. These lines will install it correctly for Arch Linux, be careful with other distros!
 ```
 mkdir build && cd build
 cmake -DCMAKE_INSTALL_PREFIX='/usr' -DCMAKE_INSTALL_LIBDIR=lib ..
