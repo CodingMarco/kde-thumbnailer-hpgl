@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/vnd.hp-hpgl">
+    <glob pattern="*.hpgl"/>
+    <glob pattern="*.hpg"/>
+    <glob pattern="*.hgl"/>
+    <glob pattern="*.plt"/>
+    <magic priority="20">
+      <match type="string" offset="0:10" value="PU;"/>
+      <match type="string" offset="0:10" value="IN;"/>
+      <match type="string" offset="0:10" value="RO;"/>
+      <match type="string" offset="0:10" value="SP1;"/>
+      <match type="string" offset="0:10" value=";PA"/>
+      <match type="string" offset="0:10" value=";PD"/>
+      <match type="string" offset="0:10" value=";IM"/>
+      <match type="string" offset="0:10" value="PR;"/>
+    </magic>
+  </mime-type>
+</mime-info>

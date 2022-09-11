@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Service
+Name=HP Graphics Language
+ServiceTypes=ThumbCreator
+MimeType=application/vnd.hp-hpgl
+CacheThumbnail=true
+IgnoreMaximumSize=true
+X-KDE-Library=hpglthumbnail
