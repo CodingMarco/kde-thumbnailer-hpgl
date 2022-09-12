@@ -1,5 +1,5 @@
 project(kde-thumbnailer-hpgl)
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.16.0)
 
 set(SHARED_MIME_INFO_MINIMUM_VERSION "0.30")
 
