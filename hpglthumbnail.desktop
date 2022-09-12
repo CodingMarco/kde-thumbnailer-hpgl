@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Service
-Name=HP Graphics Language
+Name=HPGL Files
 ServiceTypes=ThumbCreator
 MimeType=application/vnd.hp-hpgl
 CacheThumbnail=true
